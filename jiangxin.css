@@ -14,9 +14,11 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 16px;
-    width: 1920px;
+}
 
-
+.header-banner-bg {
+    width: 100%;
+    height: 668px;
 }
 
 
@@ -32,13 +34,13 @@ body {
     width: 112px;
     height: 41px;
     top: 20px;
-    left: 460px;
+    left: 24%;
 }
 
 .header-pic {
     position: absolute;
     top: 155px;
-    left: 590px;
+    left: 38%;
 }
 
 .mainer-border-top {
@@ -46,16 +48,15 @@ body {
     width: 1074px;
     height: 19px;
     top: 546px;
-    left: 423px;
+    left: 31%;
 
 }
 
 .mainer-wrapper {
     position: absolute;
     top: 562px;
-    left: 460px;
+    left: 32.5%;
     width: 1000px;
-    /* height: 3839px; */
     border: 6px solid #E2E2E2;
     z-index: 1;
 }
@@ -303,7 +304,12 @@ body {
     line-height: 26px;
 }
 
+.wish-act-time {
+    width: 60px;
+}
+
 .wish-act-date div {
+    margin-top: 5px;
     line-height: 16px;
     margin-bottom: 10px;
 }
@@ -356,28 +362,11 @@ body {
     margin-left: 50px;
 }
 
-.wish-card {
-    position: absolute;
-    width: 320px;
-    height: 278px;
-}
 
 .wish-mountain {
     position: absolute;
     bottom: 0px;
     right: 0px;
-}
-
-.wish-card-wrapper {
-    position: relative;
-    width: 320px;
-    height: 178px;
-}
-
-.wish-tag-left {
-    position: absolute;
-    top: -15px;
-    left: -17px;
 }
 
 .wish-tag-right {
@@ -387,14 +376,59 @@ body {
 }
 
 .wish-card-bg {
+    position: absolute;
     width: 320px;
-    height: 158px;
+    height: 157px;
     border: 1px solid rgba(213, 214, 234, 0.9);
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.05);
     padding: 10px 10px;
+    background: url(./image/cborder.png);
+    background-position: 20%;
 }
 
+.wish-card-bg::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    left: -17px;
+    background: url(./image/message_bg_left.png);
+    background-repeat: no-repeat;
+}
+
+.wish-card-bg::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -15px;
+    right: -20px;
+    background: url(./image/message_bg_right.png);
+    background-repeat: no-repeat;
+}
+
+.wish-card-close {
+    display: none;
+    width: 50px;
+    height: 38px;
+    background: url(./image/close.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: 50%;
+    top: -33px;
+    right: 0;
+    background-position: top;
+    cursor: pointer;
+}
+
+.wish-card-bg:hover .wish-card-close {
+    display: block;
+}
+
+
 .wish-card-name {
+    width: 84px;
     font-size: 16px;
     font-family: FZLTHJW;
     font-weight: normal;
@@ -414,12 +448,12 @@ body {
     position: absolute;
     width: 1074px;
     height: 19px;
-    left: 423px;
+    left: 31%;
     top: 4347px;
 }
 
-.page-footer{
-background-color: #F7F7F7;
+.page-footer {
+    background-color: #F7F7F7;
 }
 
 .footer-title {
